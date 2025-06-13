@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_API_URL;
-console.log(BASE_URL)
+const BASE_URL = 'https://travel-backend-ch4u.onrender.com';
 
 export const fetchDestinations = async () => {
   const res = await axios.get(`${BASE_URL}/api/destinations`);
